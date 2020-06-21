@@ -18,30 +18,22 @@ namespace InMemoryApp.Web.Controllers
 
         public IActionResult Index()
         {
-            //1. yol
-            if (String.IsNullOrEmpty(memoryCache.Get<string>("zaman")))
-            {
-                memoryCache.Set<string>("zaman", DateTime.Now.ToString());
-            }
+            //if(memoryCache.TryGetValue("zaman", out object result))
+            //{
+                MemoryCacheEntryOptions memoryCacheEntryOptions = new MemoryCacheEntryOptions();
+            // memoryCacheEntryOptions.AbsoluteExpiration = DateTime.Now.AddSeconds(10);
 
-            //2. yol
+            memoryCacheEntryOptions.SlidingExpiration = TimeSpan.FromSeconds(10);
 
-            if(memoryCache.TryGetValue("zaman", out object result))
-            {
-                memoryCache.Set<string>("zaman", DateTime.Now.ToString());
-            }
-            
+                memoryCache.Set<string>("zaman", DateTime.Now.ToString(),memoryCacheEntryOptions);
+            //}
             return View();
         }
 
         public IActionResult Show()
         {
-            memoryCache.GetOrCreate<string>("zaman",  cacheEntry => {
-                return DateTime.Now.ToString();
-            }
-            );
-             
-            ViewBag.zaman = memoryCache.Get("zaman");
+            memoryCache.TryGetValue("zaman", out string zamanCache);
+            ViewBag.zaman = zamanCache;
             return View();
         }
     }
