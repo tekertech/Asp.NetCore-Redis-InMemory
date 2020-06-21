@@ -9,8 +9,16 @@ namespace DistributedCachedRedisApp.Web.Controllers
 {
     public class ProductController : Controller
     {
+        private readonly IDistributedCache distributedCache;
+
+        public ProductController(IDistributedCache distributedCache)
+        {
+            this.distributedCache = distributedCache;
+        }
+
         public IActionResult Index()
         {
+
             return View();
         }
     }
