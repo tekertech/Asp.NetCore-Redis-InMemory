@@ -1,9 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Product p = ViewBag.product as Product;
 }
 
     <div class="text-center">
         <h1 class="display-4">@ViewBag.zaman</h1>
         <h1 class="display-4">@ViewBag.callback</h1>
+        <h1 class="display-4">@p.Id => @p.Name => @p.Price</h1>
         <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     </div>
