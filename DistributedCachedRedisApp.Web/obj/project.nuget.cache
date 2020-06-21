@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LOHZhL2UkNxfluypDuU5udOTgRZ9hJKQGZ2E+2DtkBeZ5dV4JMkz8M0KjIbQaraLbqHJRvJAtPbnGS5cphPKxQ==",
+  "dgSpecHash": "epecStoEE+30gWTC+A6W73jBnf+Q2C7gIMoSR3Fq95aEQ2Y+iIYAdXWw8cOmIx3U5BhL/ZEpwXCo/oTNfk1A4Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\MEHMTEKE\\Source\\Repos\\RedisInMemory\\DistributedCachedRedisApp.Web\\DistributedCachedRedisApp.Web.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\MEHMTEKE\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0-preview.5.20278.1\\microsoft.extensions.primitives.5.0.0-preview.5.20278.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\MEHMTEKE\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\MEHMTEKE\\.nuget\\packages\\pipelines.sockets.unofficial\\2.0.17\\pipelines.sockets.unofficial.2.0.17.nupkg.sha512",
     "C:\\Users\\MEHMTEKE\\.nuget\\packages\\stackexchange.redis\\2.0.593\\stackexchange.redis.2.0.593.nupkg.sha512",
     "C:\\Users\\MEHMTEKE\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
