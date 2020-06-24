@@ -52,7 +52,7 @@ namespace RedisExchangeAPI.Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=ListType}/{action=Index}/{id?}");
+                    pattern: "{controller=SetType}/{action=Index}/{id?}");
             });
         }
     }
